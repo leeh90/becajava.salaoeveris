@@ -11,7 +11,7 @@ import br.salaoeveris.app.response.BaseResponse;
 import br.salaoeveris.app.service.ClienteService;
 
 @RestController
-@RequestMapping("/cliente")
+@RequestMapping("/clientes")
 public class ClienteController extends BaseController {
 
 	final ClienteService _service; // A variavel " _service " herda toda a classe ClienteService com seus metodos

@@ -60,6 +60,7 @@ public class ServicoService {
 		}
 
 		servicoResponse.setNome(servico.get().getNome());
+		servicoResponse.setValor(servico.get().getValor());
 
 		servicoResponse.message = "Cliente obtido com sucesso.";
 		servicoResponse.statusCode = 200;
