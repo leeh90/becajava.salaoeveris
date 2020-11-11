@@ -11,5 +11,5 @@ import br.salaoeveris.app.model.Agendamento;
 public interface AgendamentoRepository extends JpaRepository<Agendamento, Long> {
 
 	Optional<Agendamento> findById(Long id);
-
+ 
 }

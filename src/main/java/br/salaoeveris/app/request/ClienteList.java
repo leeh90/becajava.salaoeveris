@@ -4,16 +4,17 @@ import java.util.List;
 
 import br.salaoeveris.app.model.*;
 import br.salaoeveris.app.response.BaseResponse;
+import br.salaoeveris.app.response.ClienteResponse;
 
 public class ClienteList extends BaseResponse {
 	
-	private List<Cliente> Clientes;
+	private List<ClienteResponse> Clientes;
 
-	public List<Cliente> getClientes() {
+	public List<ClienteResponse> getClientes() {
 		return Clientes;
 	}
 
-	public void setClientes(List<Cliente> clientes) {
+	public void setClientes(List<ClienteResponse> clientes) {
 		Clientes = clientes;
 	}
 

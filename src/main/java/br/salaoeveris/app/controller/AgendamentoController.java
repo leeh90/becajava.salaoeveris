@@ -1,5 +1,7 @@
 package br.salaoeveris.app.controller;
 
+import java.util.Date;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -44,7 +46,7 @@ public class AgendamentoController extends BaseController {
 	}
 
 	@GetMapping
-	public ResponseEntity listar() {
+	public ResponseEntity listar(@PathVariable Date dataInicio, @PathVariable Date dataFinal) {
 		try {
 			AgendamentoList agendamentos = _service.listar();
 			return ResponseEntity.status(HttpStatus.OK).body(agendamentos);
